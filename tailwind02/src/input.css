@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+}
+/* note on how we got the 68px */
+/* the h1 for the first section has a line-height of 2.25rem or 36px */
+/* the padding has 1rem or 16px on top and bottom */
